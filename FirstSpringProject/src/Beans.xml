@@ -4,5 +4,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
-<bean id="market" class="com.prft.spring.Vegetables"></bean>  
+<bean id="vegetables" class="com.prft.spring.Vegetables">
+<property name="veg_name" value="carrot"></property>
+<property name="price" value="30"></property>
+</bean> 
+<bean id="fruits" class="com.prft.spring.Fruits">
+<constructor-arg name="fr_name" value="apple"/>
+<constructor-arg name="f_price" value="100"/>
+</bean>
 </beans>

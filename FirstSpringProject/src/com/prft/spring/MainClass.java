@@ -8,9 +8,10 @@ public class MainClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ApplicationContext context=new ClassPathXmlApplicationContext("Beans.xml");
-		Market mar=context.getBean("market",Market.class);
-		mar.ingredients();
-		mar.price();
+		Vegetables veg=context.getBean("vegetables",Vegetables.class);
+		veg.display();
+		Fruits fr=context.getBean("fruits",Fruits.class);
+		fr.displayinfo();
 	}
 
 }
